@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS DimProduct;
 
 CREATE TABLE DimProduct(
-    product_id INT PRIMARY KEY NOT NULL,
+    product_id INT IDENTITY(1,1) PRIMARY KEY,
     product_name VARCHAR(100) NOT NULL,
     category_id INT NOT NULL,
     reorder_point INT,
