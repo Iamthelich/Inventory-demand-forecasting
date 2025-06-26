@@ -7,5 +7,5 @@ CREATE TABLE FactSales(
     sale_date DATE,
     FOREIGN KEY (sale_date) REFERENCES DimDates(date_key),
     sale_price DECIMAL (10,2),
-    quantity_sold INT,
+    quantity_sold INT
 );
